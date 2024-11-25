@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  payload:
+    image: payload-cms-demo-app:v1
+    volumes:
+      - ./payload-poc-sqlite.db:/app/payload-poc-sqlite.db
+    ports:
+      - '3000:3000'
