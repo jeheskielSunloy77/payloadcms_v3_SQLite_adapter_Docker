@@ -20,7 +20,7 @@ Out of the box payloadcms (v3) with Dockerfile did not work. These things change
 - Altered Dockerfile slightly (see Dockerfile in this project) (AND DONT USED ALPINE BECAUSE OF 'linux-x64-musl' error, instead e.g. use node-slim);
 - Docker compose uses the image that is build via the dockerfile, instead of locally using the app as volume;
 - executed 'pnpm install @libsql/client' for resolving cannot find module 'libsql';
-- Add 'output: 'standalone',' to payload.config.ts
+- Add 'output: 'standalone',' to next.config.ts
 
 ### via docker compose
 
